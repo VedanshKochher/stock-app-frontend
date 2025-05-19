@@ -56,10 +56,10 @@ export const placeOrder = createAsyncThunk(
 
 export const cancelOrder = createAsyncThunk(
   'orders/cancelOrder',
-  async ({ orderId, token }: { orderId: string, token: string }, { rejectWithValue }) => {
+  async ({ order_id, token }: { order_id: string, token: string }, { rejectWithValue }) => {
     try {
-      const response = await orderService.cancelOrder(orderId, token);
-      return { response, orderId };
+      const response = await orderService.cancelOrder(order_id, token);
+      return { response, order_id };
     } catch (error) {
       if (error instanceof Error) {
         return rejectWithValue(error.message);
@@ -119,8 +119,8 @@ export const ordersSlice = createSlice({
       .addCase(cancelOrder.fulfilled, (state, action) => {
         state.cancelOrderStatus = 'succeeded';
         // Update the local state by removing the cancelled order
-        if (action.payload.orderId) {
-          state.orders = state.orders.filter(order => order.order_id !== action.payload.orderId);
+        if (action.payload.order_id) {
+          state.orders = state.orders.filter(order => order.order_id !== action.payload.order_id);
         }
       })
       .addCase(cancelOrder.rejected, (state, action) => {

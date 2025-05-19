@@ -1,6 +1,16 @@
-import React from 'react';
+interface ResourceItem {
+  title: string;
+  url: string;
+  desc?: string;
+}
 
-const resources = [
+interface Resource {
+  category: string;
+  icon: string;
+  items: ResourceItem[];
+}
+
+const resources: Resource[] = [
   {
     category: 'Beginner Guides',
     icon: '📘',

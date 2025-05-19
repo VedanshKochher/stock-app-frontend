@@ -166,10 +166,10 @@ const Orders: React.FC = () => {
   };
 
   // Handle cancelling an order
-  const handleCancelOrder = (orderId: string) => {
-    console.log('Cancel order clicked, orderId:', orderId);
+  const handleCancelOrder = (order_id: string) => {
+    console.log('Cancel order clicked, order_id:', order_id);
     if (token) {
-      dispatch(cancelOrder({ orderId, token }));
+      dispatch(cancelOrder({ order_id, token }));
     }
   };
 
@@ -387,8 +387,8 @@ const Orders: React.FC = () => {
                   </thead>
                   <tbody className="bg-white divide-y divide-gray-200">
                     {orders.map((order: Order) => (
-                      <tr key={order.orderId} className="hover:bg-gray-50">
-                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{order.orderId}</td>
+                      <tr key={order.order_id} className="hover:bg-gray-50">
+                        <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{order.order_id}</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{order.tradingSymbol || order.symbol || order.instrument_token}</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm">
                           <span className={`font-semibold ${order.transaction_type === 'BUY' ? 'text-green-600' : 'text-red-600'}`}>
@@ -410,7 +410,7 @@ const Orders: React.FC = () => {
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{formatDate(order.order_timestamp)}</td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                           <button
-                            onClick={() => handleCancelOrder(order.orderId)}
+                            onClick={() => handleCancelOrder(order.order_id)}
                             disabled={
                               order.status.toUpperCase() === 'REJECTED' ||
                               order.status.toUpperCase() === 'CANCELLED' ||

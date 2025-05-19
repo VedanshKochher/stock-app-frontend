@@ -21,7 +21,7 @@ const Trading = () => {
     setSuccess('');
 
     try {
-      const response = await axios.post(`${BASE_URL}/place-order`, {
+      await axios.post(`${BASE_URL}/place-order`, {
         ...orderDetails,
         quantity: parseInt(orderDetails.quantity),
         price: orderDetails.orderType === 'LIMIT' ? parseFloat(orderDetails.price) : 0,

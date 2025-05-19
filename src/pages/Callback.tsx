@@ -24,11 +24,18 @@ function AuthCallback() {
 
     console.log("Auth data:", userData);
 
-    if (userData.token) {
+    if (userData.token && userData.email && userData.userId && userData.userName && userData.userType) {
       // Store auth data in Redux
       dispatch(setCredentials({
         token: userData.token,
-        user: userData
+        user: {
+          token: userData.token,
+          email: userData.email,
+          userId: userData.userId,
+          userName: userData.userName,
+          userType: userData.userType,
+          isActive: userData.isActive
+        }
       }));
 
       // Store auth data in localStorage for persistence
