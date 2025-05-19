@@ -7,7 +7,7 @@ import axios from 'axios';
 import { BASE_URL } from '../const';
 
 // Define interfaces
-interface ProfileData {
+interface ProfileData { 
   name: string;
   email: string;
   phone?: string;
@@ -57,15 +57,26 @@ const Dashboard = () => {
   if (!isAuthenticated) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center px-4">
-        <div className="text-center py-12 max-w-md">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4 font-sans">Welcome to StockApp</h2>
-          <p className="text-gray-600 mb-8 text-lg">Please login to access your dashboard and start trading</p>
-          <Link
-            to="/login"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl"
-          >
-            Login with Upstox
-          </Link>
+        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-4xl bg-white/80 rounded-xl shadow-lg overflow-hidden">
+          {/* Left: Login Card */}
+          <div className="w-full md:w-1/2 text-center py-12 px-8">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 font-sans">Welcome to StockApp</h2>
+            <p className="text-gray-600 mb-8 text-lg">Please login to access your dashboard and start trading</p>
+            <Link
+              to="/login"
+              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl"
+            >
+              Login with Upstox
+            </Link>
+          </div>
+          {/* Right: Illustration */}
+          <div className="hidden md:flex w-1/2 h-full items-center justify-center bg-gradient-to-br from-indigo-50 to-indigo-100">
+            <img
+              src="/dashboard-bg.jpg"
+              alt="Dashboard Illustration"
+              className="object-cover w-80 h-80 rounded-xl shadow-md border-4 border-indigo-100"
+            />
+          </div>
         </div>
       </div>
     );
