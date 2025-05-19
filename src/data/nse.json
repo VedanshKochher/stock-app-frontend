@@ -1,0 +1,124 @@
+{
+  "stocks": [
+    {
+      "symbol": "RELIANCE",
+      "instrument_key": "NSE_EQ|INE002A01018"
+    },
+    {
+      "symbol": "TCS",
+      "instrument_key": "NSE_EQ|INE467B01029"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "instrument_key": "NSE_EQ|INE040A01034"
+    },
+    {
+      "symbol": "INFY",
+      "instrument_key": "NSE_EQ|INE009A01021"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "instrument_key": "NSE_EQ|INE090A01021"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "instrument_key": "NSE_EQ|INE030A01027"
+    },
+    {
+      "symbol": "SBIN",
+      "instrument_key": "NSE_EQ|INE062A01020"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "instrument_key": "NSE_EQ|INE397D01024"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "instrument_key": "NSE_EQ|INE237A01028"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "instrument_key": "NSE_EQ|INE296A01024"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "instrument_key": "NSE_EQ|INE021A01026"
+    },
+    {
+      "symbol": "AXISBANK",
+      "instrument_key": "NSE_EQ|INE238A01034"
+    },
+    {
+      "symbol": "MARUTI",
+      "instrument_key": "NSE_EQ|INE585B01010"
+    },
+    {
+      "symbol": "TITAN",
+      "instrument_key": "NSE_EQ|INE280A01028"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "instrument_key": "NSE_EQ|INE481G01011"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "instrument_key": "NSE_EQ|INE044A01036"
+    },
+    {
+      "symbol": "NESTLEIND",
+      "instrument_key": "NSE_EQ|INE239A01016"
+    },
+    {
+      "symbol": "ONGC",
+      "instrument_key": "NSE_EQ|INE213A01029"
+    },
+    {
+      "symbol": "TECHM",
+      "instrument_key": "NSE_EQ|INE669C01036"
+    },
+    {
+      "symbol": "POWERGRID",
+      "instrument_key": "NSE_EQ|INE752E01010"
+    },
+    {
+      "symbol": "NTPC",
+      "instrument_key": "NSE_EQ|INE733E01010"
+    },
+    {
+      "symbol": "WIPRO",
+      "instrument_key": "NSE_EQ|INE075A01022"
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "instrument_key": "NSE_EQ|INE019A01038"
+    },
+    {
+      "symbol": "HCLTECH",
+      "instrument_key": "NSE_EQ|INE860A01027"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "instrument_key": "NSE_EQ|INE742F01042"
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "instrument_key": "NSE_EQ|INE155A01022"
+    },
+    {
+      "symbol": "DRREDDY",
+      "instrument_key": "NSE_EQ|INE089A01023"
+    },
+    {
+      "symbol": "M&M",
+      "instrument_key": "NSE_EQ|INE101A01026"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "instrument_key": "NSE_EQ|INE192A01025"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "instrument_key": "NSE_EQ|INE216A01030"
+    }
+  ]
+}
